@@ -9,11 +9,23 @@
     <title>Hello!</title>
   </head>
   <body>
-    <h1>Superscript or Subscript</h1>
-    <p>
-      <sup>Superscript Here</sup><br>
-      or <br>
-      <sub>Subscript Here</sub>
-    </p>
+    <h1>Table of Contents</h1>
+    <!-- Link to an anchor -->
+    <a href='firstTopic.html'>Click to jump to the First Topic</a><br>
+    <a href='secondTopic.html#Topic2'>Click to jump to the Second Topic</a><br>
+    <!-- Link to a page on the same site -->
+    <a href="/coba">coba</a> <!-- localhost/cobas --> <br>
+    <!-- Link that dials a number -->
+    <a href="tel:+6285601517181">Telp this!</a><br>
+    <!-- Open link in new tab/window -->
+    <!-- Whenever using this for pages you do not control -->
+    <!-- add rel -->
+    <a href="firstTopic.html" target="_blank" rel="noopener noreferrer">firstTopic New Tab</a><br>
+    <!-- Link that runs JavaScript -->
+    <a href="javascript:myFunction();">Run Code</a><br>
+    <a href="#!" onclick="myFunction(); return false;">Run Code</a><br>
+    <!-- Link that runs email client -->
+    <a href="mailto:example@example.com">Send email</a><br>
+    <a href="mailto:example@example.com?cc=john@example.com&bcc=jane@example.com">Send email</a>
   </body>
 </html>
