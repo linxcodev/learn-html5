@@ -9,23 +9,70 @@
     <title>Hello!</title>
   </head>
   <body>
-    <h1>Table of Contents</h1>
-    <!-- Link to an anchor -->
-    <a href='firstTopic.html'>Click to jump to the First Topic</a><br>
-    <a href='secondTopic.html#Topic2'>Click to jump to the Second Topic</a><br>
-    <!-- Link to a page on the same site -->
-    <a href="/coba">coba</a> <!-- localhost/cobas --> <br>
-    <!-- Link that dials a number -->
-    <a href="tel:+6285601517181">Telp this!</a><br>
-    <!-- Open link in new tab/window -->
-    <!-- Whenever using this for pages you do not control -->
-    <!-- add rel -->
-    <a href="firstTopic.html" target="_blank" rel="noopener noreferrer">firstTopic New Tab</a><br>
-    <!-- Link that runs JavaScript -->
-    <a href="javascript:myFunction();">Run Code</a><br>
-    <a href="#!" onclick="myFunction(); return false;">Run Code</a><br>
-    <!-- Link that runs email client -->
-    <a href="mailto:example@example.com">Send email</a><br>
-    <a href="mailto:example@example.com?cc=john@example.com&bcc=jane@example.com">Send email</a>
+    <h1>List</h1>
+    <h2>Ordered List</h2>
+    <ol>
+      <li>ol 1</li>
+      <li>ol 2</li>
+      <li>ol 3</li>
+    </ol>
+    <h3>With Type 1|a|A|i|I</h3>
+    <ol type="a">
+      <li>type 1 numeric (default)</li>
+      <li>type a|A for list abjad lower|upper</li>
+      <li>type i|I for list romawi</li>
+    </ol>
+    <h3>start 3</h3>
+    <ol start="3">
+      <li>ol 3</li>
+      <li>ol 4</li>
+      <li>ol 5</li>
+    </ol>
+    <h2>Unordered List</h2>
+    <ul>
+      <li>ul first</li>
+      <li>ul second</li>
+      <li>ul last</li>
+    </ul>
+    <h2>Nested List</h2>
+    <!-- ol sub list -->
+    <ol>
+      <li>ol 1</li>
+      <li>ol 2
+        <ol>
+          <li>sub ol 1</li>
+          <li>sub ol 2</li>
+        </ol>
+      </li>
+      <li>ol 3</li>
+    </ol>
+    <!-- ul sub list -->
+    <ul>
+      <li>ul 1</li>
+      <li>ul 2
+        <ul>
+          <li>ul sub 1</li>
+          <li>ul sub 2</li>
+        </ul>
+      </li>
+      <li>ul 3</li>
+    </ul>
+    <h2>Description List</h2>
+    <dl>
+      <dt>nama 1</dt> <!-- definition terms -->
+      <dd>value 1</dd> <!-- Description -->
+      <dt>nama 2</dt>
+      <dd>value 2</dd>
+    </dl>
+    <dl>
+      <dt>name 1</dt>
+      <dt>name 2</dt>
+      <dd>value 1 and 2</dd>
+    </dl>
+    <dl>
+      <dt>name 1</dt>
+      <dd>value 1</dd>
+      <dd>value 2</dd>
+    </dl>
   </body>
 </html>
