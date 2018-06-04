@@ -1,68 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- element void not has close tag -->
-    <meta charset="utf-8">
-    <link rel="" href="/css/master.css">
-    <!--  -->
-
     <title>Hello!</title>
+
+    <style>
+      .pink {
+        color: pink
+      }
+      .highlight {
+        color: green
+      }
+      p.highlight {
+        color: blue
+      }
+      #green {
+        color: green
+      }
+    </style>
   </head>
   <body>
-    <h1>Table</h1>
-    <h2>Simple table</h2>
-    <table border="1">
-      <tr>
-        <th>header 1</th>
-        <th>header 2</th>
-      </tr>
-      <tr>
-        <td>data 1</td>
-        <td>data 2</td>
-      </tr>
-      <tr>
-        <td>data 3</td>
-        <td>data 4</td>
-      </tr>
-    </table>
-    <h2>Spanning row and column</h2>
-    <table border="1">
-      <tr>
-        <th>data 1</th>
-        <th>data 2</th>
-        <th>data 3</th>
-      </tr>
-      <tr>
-        <td colspan="3">data col 1 - 3</td>
-      </tr>
-      <tr>
-        <td rowspan="2" colspan="2">row 3-4</td>
-        <td>data col3</td>
-      </tr>
-      <tr>
-        <td>data col3</td>
-      </tr>
-    </table>
-    <h2>thead, tbody, and tfoot</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>header 1</th>
-          <th>header 2</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>body 1</td>
-          <td>body 2</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>footer 1</td>
-          <td>footer 2</td>
-        </tr>
-      </tfoot>
-    </table>
+    <h1>Classes and ids</h1>
+    <!-- Classes is not unique -->
+    <div class="pink">
+      <p>Hello Word</p>
+    </div>
+
+    <div class="highlight">
+      <p>Hello Word</p>
+    </div>
+
+    <p class="highlight">Hello Word</p>
+
+    <!-- ids is unique -->
+    <!-- ids can write by caracters|numeric -->
+    <div id="green">hijau</div>
   </body>
 </html>
