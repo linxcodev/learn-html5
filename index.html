@@ -2,37 +2,37 @@
 <html>
   <head>
     <title>Hello!</title>
-
+    <!-- linking css in head tag -->
+    <link rel="stylesheet" href="path/to.css">
+    <!-- or -->
     <style>
-      .pink {
-        color: pink
-      }
-      .highlight {
-        color: green
-      }
-      p.highlight {
-        color: blue
-      }
-      #green {
-        color: green
-      }
+      @import("path/to.css")
     </style>
+    <!-- favicon -->
+    <!-- image/icon for png -->
+    <link rel="icon" type="image/icon" href="/favicon.png">
+    <!-- image/x-icon when ico -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <!-- pr -->
+    <link rel="preconnect" href="URL"> <!-- Resource Hint: dns-prefetch, prefetch, prerender -->
+    <link rel="stylesheet" href="/css/master.css" media="print"> <!-- media pr -->
+    <link rel="prev" href="http://stackoverflow.com/documentation/java/topics">
+    <link rel="next" href="http://stackoverflow.com/documentation/css/topics"> <!-- prev and next pr -->
+    <!-- Web Feed pr -->
+    <link rel="alternate" type="application/atom+xml" href="http://example.com/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" href="http://example.com/feed.xml" />
   </head>
   <body>
-    <h1>Classes and ids</h1>
-    <!-- Classes is not unique -->
-    <div class="pink">
-      <p>Hello Word</p>
-    </div>
+    <h1>Linking resources</h1>
 
-    <div class="highlight">
-      <p>Hello Word</p>
-    </div>
-
-    <p class="highlight">Hello Word</p>
-
-    <!-- ids is unique -->
-    <!-- ids can write by caracters|numeric -->
-    <div id="green">hijau</div>
+    <!-- scrip place befor /body tag -->
+    <script src="path/to.js"></script> <!-- syncrhonous script -->
+    <!-- asyncrhonous script -->
+    <script src="path/to.js" async></script>
+    <!-- like asyncrhonous with way same syncronous -->
+    <script src="path/to.js" defer></script>
+    <!-- displayed when user has script disabled or browser not support script -->
+    <!-- place head or body -->
+    <noscript>javascript disabled</noscript>
   </body>
 </html>
