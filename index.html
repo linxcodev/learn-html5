@@ -2,25 +2,6 @@
 <html>
   <head>
     <title>Hello!</title>
-    <!-- linking css in head tag -->
-    <link rel="stylesheet" href="path/to.css">
-    <!-- or -->
-    <style>
-      @import("path/to.css")
-    </style>
-    <!-- favicon -->
-    <!-- image/icon for png -->
-    <link rel="icon" type="image/icon" href="/favicon.png">
-    <!-- image/x-icon when ico -->
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <!-- pr -->
-    <link rel="preconnect" href="URL"> <!-- Resource Hint: dns-prefetch, prefetch, prerender -->
-    <link rel="stylesheet" href="/css/master.css" media="print"> <!-- media pr -->
-    <link rel="prev" href="http://stackoverflow.com/documentation/java/topics">
-    <link rel="next" href="http://stackoverflow.com/documentation/css/topics"> <!-- prev and next pr -->
-    <!-- Web Feed pr -->
-    <link rel="alternate" type="application/atom+xml" href="http://example.com/feed.xml" />
-    <link rel="alternate" type="application/rss+xml" href="http://example.com/feed.xml" />
     <!-- internale stylesheet -->
     <style type="text/css">
       body {
@@ -31,19 +12,34 @@
         color: red;
         background-color: white;
       }
+      a {
+        color: red;
+      }
     </style>
   </head>
   <body>
-    <h1>Linking resources</h1>
+    <h1>Images</h1>
 
-    <!-- scrip place befor /body tag -->
-    <script src="path/to.js"></script> <!-- syncrhonous script -->
-    <!-- asyncrhonous script -->
-    <script src="path/to.js" async></script>
-    <!-- like asyncrhonous with way same syncronous -->
-    <script src="path/to.js" defer></script>
-    <!-- displayed when user has script disabled or browser not support script -->
-    <!-- place head or body -->
-    <noscript>javascript disabled</noscript>
+    <!-- Responsive image using the srcset attribute -->
+    <img sizes="(min-width: 1200px) 580px,
+    (min-width: 640px) 48vw,
+    98vw"
+    srcset="img/hello-300.jpg 300w,
+    img/hello-600.jpg 600w,
+    img/hello-900.jpg 900w,
+    img/hello-1200.jpg 1200w"
+    src="img/hello-900.jpg" alt="hello">
+
+    <img src="img/hello-300.jpg" alt="hello"
+    srcset="img/hello-300.jpg 1x,
+    img/hello-600.jpg 2x,
+    img/hello-1200.jpg 3x">
+
+    <!-- Responsive with picture elements -->
+    <picture>
+      <source media="(min-width: 600px)" srcset="large_image.jpg">
+      <source media="(min-width: 450px)" srcset="small_image.jpg">
+      <img src="default_image.jpg" style="width:auto;">
+    </picture>
   </body>
 </html>
