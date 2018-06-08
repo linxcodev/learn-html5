@@ -2,34 +2,30 @@
 <html>
   <head>
     <title>Hello!</title>
+    <style media="screen">
+      div {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <h1>Forms</h1>
-    <!-- action to file, method post or get -->
-    <!-- post send to file action -->
-    <!-- get data in here file or action -->
-    <form action="firstTopic.html" method="post" target="_blank" enctype="multipart/form-data">
-      <input type="file" name="pic" accept="image/*"><br>
-      <input type="submit" onclick="alert('pindah halaman')" value="upload">
-    </form>
-
-    <!-- gruping forms -->
-    <form action="secondTopic.html" method="post" target="_blank">
-      <fieldset>
-        <legend>1st field set:</legend>
-        Field one:<br>
-        <input type="text"><br>
-        Field two:<br>
-        <input type="text"><br>
-      </fieldset><br>
-      <fieldset>
-        <legend>2nd field set:</legend>
-        Field three:<br>
-        <input type="text"><br>
-        Field four:<br>
-        <input type="text"><br>
-        </fieldset><br>
-        <input type="submit" onclick="alert('yakin ?')" value="Submit">
-    </form>
+    <h1>Div Elements</h1>
+    <div>
+      <p>The div element in HTML is a container element that encapsulates other elements and can be used to group and
+        separate parts of a webpage. A div by itself does not inherently represent anything but is a powerful tool in web
+        design. This topic covers the purpose and applications of the div element.</p>
+    </div>
+    <!-- nesting -->
+    <div>
+      <h2>outer div</h2>
+      <div>
+        <h3>inner div</h3>
+        <p>Div in paragraph 1</p>
+      </div>
+      <div>
+        <h3>inner div</h3>
+        <p>Div in paragraph 2</p>
+      </div>
+    </div>
   </body>
 </html>
