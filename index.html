@@ -2,30 +2,42 @@
 <html>
   <head>
     <title>Hello!</title>
-    <style media="screen">
-      div {
-        display: block;
-      }
-    </style>
   </head>
   <body>
-    <h1>Div Elements</h1>
-    <div>
-      <p>The div element in HTML is a container element that encapsulates other elements and can be used to group and
-        separate parts of a webpage. A div by itself does not inherently represent anything but is a powerful tool in web
-        design. This topic covers the purpose and applications of the div element.</p>
-    </div>
-    <!-- nesting -->
-    <div>
-      <h2>outer div</h2>
-      <div>
-        <h3>inner div</h3>
-        <p>Div in paragraph 1</p>
-      </div>
-      <div>
-        <h3>inner div</h3>
-        <p>Div in paragraph 2</p>
-      </div>
-    </div>
+    <!-- A <header> typically contains a group of introductory or navigational aids -->
+    <header>
+      <!-- introductory -->
+      <h1>Sectioning Elements</h1>
+      <!-- contain main navigation blocks -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <!-- main content -->
+    <!-- main element as a grouping element, and not a sectioning element -->
+    <main>
+      <!-- per section not contain -->
+      <section>
+        <h1>Individual Blog Post</h1>
+        <p>An introduction for the post.</p>
+      </section>
+      <section>
+        <!-- contains self-contained content like articles, blog posts, user comments -->
+        <article>
+          <h2>References</h2>
+          <p>...</p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Comments</h2> ...
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p><b>All Right Reserved</b></p>
+    </footer>
   </body>
 </html>
