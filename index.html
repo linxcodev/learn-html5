@@ -4,109 +4,32 @@
     <title>Hello!</title>
   </head>
   <body>
-    <h1>Input Control Elements</h1>
-
-    <!-- size : length form input -->
-    <input type="text" name="name" placeholder="name"size="20" required><br>
-    <!-- multi-line -->
-    <textarea name="textarea" rows="8" cols="80" placeholder="enter"></textarea><br>
-
-    <!-- checkbox can select multiple -->
-    <input type="checkbox">
-    <input type="checkbox">
-    <input type="checkbox"><br>
-
-    <!-- only one choice by group name -->
-    <input type="radio" name="color" id="red" value="#F00" checked> <!-- default -->
-    <input type="radio" name="color" id="green" value="#0F0">
-    <input type="radio" name="color" id="blue" value="#00F"><br>
-
-    <!-- radio with label -->
-    <label>
-      <input type="radio" name="gender" value="lk">
-      laki
-    </label>
-    <label>
-      <input type="radio" name="gender" value="pr">
-      perempuan
-    </label><br>
-    <!-- or -->
-    <input type="radio" name="who" id="man" value="man">
-    <label for="man">Man</label>
-    <input type="radio" name="who" id="girl" value="girl">
-    <label for="girl">Girl</label><br>
-    <br>
-    <!-- grouping button -->
-    <fieldset>
-      <legend>Gender :</legend>
-      <p>
-      <input type="radio" name="jk" id="man1" value="man">
-      <label for="man1">Man</label>
-      </p>
-      <p>
-      <input type="radio" name="jk" id="girl1" value="girl">
-      <label for="girl1">Girl</label>
-      </p>
-    </fieldset>
-    <!-- input validation -->
-    <br><br>
-    <form class="" action="#" method="post" enctype="multipart/form-data"> <!-- multipart/form-data for input file -->
-      <!-- required must have value, minlength minimal caracter, maxlength max caracter -->
-      <input type="text" size="30" minlength="5" maxlength="13" name="name" placeholder="input name"  required>
-      <!-- range --><br>
-      <input type="range" name="range" min="3" max="5"><br>
-      <input type="number" name="marks" min="0" max="100" placeholder="range 0-100"><br>
-      <!-- validation with pattern number -->
-      <input pattern="\d*" title="Number only, please." placeholder="input number"><br>
-      <!-- input file validation with accept -->
-      <input type="file" accept="image/*" title="only image"> <br>
-      <input type="file" accept="image/*,application/zip" title="only image or zip"> <br>
-
-      <input type="submit" value="publish"> <!-- form will be validated -->
-      <input type="submit" value="save" formnovalidate><!-- form will NOT be validated -->
-      <input type="reset" value="Reset"><!-- reset value -->
+    <h1>Forms</h1>
+    <!-- action to file, method post or get -->
+    <!-- post send to file action -->
+    <!-- get data in here file or action -->
+    <form action="firstTopic.html" method="post" target="_blank" enctype="multipart/form-data">
+      <input type="file" name="pic" accept="image/*"><br>
+      <input type="submit" onclick="alert('pindah halaman')" value="upload">
     </form>
-    <!-- input colors --><br><br>
-    <input type="color" name="favcolor" value="#2100ff"><br>
-    <!-- password --><br>
-    <input type="password" name="password" placeholder="password" title="please input your password"><br>
-    <input type="button" onclick="alert('hello world!')" value="Click Me">
-    <br>
-    <!-- button submit with icon -->
-    <button type="submit" onclick="alert('hello world')">
-      <img src="hello.png" /> Helo
-    </button>
-    <!-- hidden input -->
-    <input type="hidden" name="hiddeninput"><br>
-    <!-- tel -->
-    <input type="tel" value="+8400000000"> <!-- not know about -->
-    <br>
-    <!-- input email -->
-    <form>
-      <label>Email :</label>
-      <input type="email" name="email" placeholder="input email">
-    </form><br>
-    <!-- input number -->
-    <input type="number" value="0" name="quantity"><br>
-    <!-- range -->
-    <input type="range" min="0" max="10" value="1"><br>
-    <!-- search -->
-    <input type="search" name="gsearch" placeholder="search"><br>
-    <!-- image -->
-    <input type="image" alt="image" src="hello.png">
-    <!-- input week -->
-    <input type="week"/>
-    <!-- url --><br>
-    <input type="url" name="homepage" placeholder="input url">
-    <!-- datetime-local --><br>
-    <input type="datetime-local">
-    <!-- month --><br>
-    <input type="month" name="month">
-    <!-- time --><br>
-    <input type="time" name="time">
-    <!-- datetime-global --><br>
-    <input type="datetime" name="date meeting"><br>
-    <!-- date -->
-    <input type="date" name="date">
+
+    <!-- gruping forms -->
+    <form action="secondTopic.html" method="post" target="_blank">
+      <fieldset>
+        <legend>1st field set:</legend>
+        Field one:<br>
+        <input type="text"><br>
+        Field two:<br>
+        <input type="text"><br>
+      </fieldset><br>
+      <fieldset>
+        <legend>2nd field set:</legend>
+        Field three:<br>
+        <input type="text"><br>
+        Field four:<br>
+        <input type="text"><br>
+        </fieldset><br>
+        <input type="submit" onclick="alert('yakin ?')" value="Submit">
+    </form>
   </body>
 </html>
