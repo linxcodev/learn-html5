@@ -4,40 +4,17 @@
     <title>Hello!</title>
   </head>
   <body>
-    <!-- A <header> typically contains a group of introductory or navigational aids -->
-    <header>
-      <!-- introductory -->
-      <h1>Sectioning Elements</h1>
-      <!-- contain main navigation blocks -->
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <!-- main content -->
-    <!-- main element as a grouping element, and not a sectioning element -->
-    <main>
-      <!-- per section not contain -->
-      <section>
-        <h1>Individual Blog Post</h1>
-        <p>An introduction for the post.</p>
-      </section>
-      <section>
-        <!-- contains self-contained content like articles, blog posts, user comments -->
-        <article>
-          <h2>References</h2>
-          <p>...</p>
-        </article>
-      </section>
-      <section>
-        <article>
-          <h2>Comments</h2> ...
-        </article>
-      </section>
-    </main>
-    <footer>
-      <p><b>All Right Reserved</b></p>
-    </footer>
+  <h1>Output Elements</h1>
+  <form id="perkalian" oninput="hasil.value = in1.value * in2.value">
+    <fieldset>
+      <legend>Kalkulator Perkalian</legend>
+      <input type="number" id="in1" value="0" size="3">
+      x
+      <input type="number" id="in2" value="0" size="3">
+    </fieldset>
+  </form>
+  <label>
+    hasil : <output name="hasil" form="perkalian">0</output>
+  </label>
   </body>
 </html>
