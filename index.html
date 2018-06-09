@@ -4,8 +4,18 @@
     <title>Hello!</title>
   </head>
   <body>
-  <h1>Embed</h1>
-  <!-- The embed tag is new in HTML5 -->
-  <embed type="video/mp4" src="j.mp4" width="300" height="300">
+  <h1>iFrames</h1>
+  <!-- It can be used to include another page in your page -->
+  <iframe src="secondTopic.html"></iframe>
+  <!-- sandbox -->
+  <iframe sandbox src="http://example.com/"></iframe>
+  <!-- allow-scripts and allow-forms to the sandbox -->
+  <iframe sandbox="allow-scripts allow-forms allow-same-origin allow-top-navigation" src="http://example.com/"></iframe>
+  <!-- srcdoc -->
+  <iframe srcdoc="<p>IFrames are cool!</p>"></iframe>
+  <!-- with change page -->
+  <iframe src="firstTopic.html" name="myIframe"></iframe><br>
+  <a href="secondTopic.html" target="myIframe">Change the Iframe content to
+    secondTopic.html</a>
   </body>
 </html>
