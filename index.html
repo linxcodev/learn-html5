@@ -4,17 +4,13 @@
     <title>Hello!</title>
   </head>
   <body>
-  <h1>Output Elements</h1>
-  <form id="perkalian" oninput="hasil.value = in1.value * in2.value">
-    <fieldset>
-      <legend>Kalkulator Perkalian</legend>
-      <input type="number" id="in1" value="0" size="3">
-      x
-      <input type="number" id="in2" value="0" size="3">
-    </fieldset>
-  </form>
-  <label>
-    hasil : <output name="hasil" form="perkalian">0</output>
-  </label>
+  <h1>Progress Elements</h1>
+  <progress value="22" max="100"></progress>
+  <!-- or -->
+  <progress max="100" value="20">
+    <div class="progress-bar">
+      <span style="width: 20%;">Progress: 20%</span>
+    </div>
+  </progress>
   </body>
 </html>
