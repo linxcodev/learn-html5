@@ -4,10 +4,11 @@
     <title>Hello!</title>
   </head>
   <body>
-  <h1>Tabindex</h1>
-  <div tabindex="0">Some button</div>
-  <button tabindex="-1">This button will not be reachable by tab</button>
-  <div tabindex="2">Second</div>
-  <div tabindex="1">First</div>
+  <h1>contenteditable</h1>
+  <p contenteditable>This is an editable paragraph.</p>
+  <p contenteditable>
+    This is an editable paragraph.
+    <span contenteditable="false">But not this.</span>
+  </p>
   </body>
 </html>
